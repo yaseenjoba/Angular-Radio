@@ -1,0 +1,24 @@
+<div class="main">
+    <div *ngIf="Selected_city=='Hebron'">
+        <label style="font-size: 20px;">Hebron </label>
+        <ul class="nav nav-pills">
+            <li *ngFor="let station of hebron"><a style="color: black;" href="#"
+                    (click)="select(station);">{{station}}</a></li>
+        </ul>
+    </div>
+    <div *ngIf="Selected_city=='Ramallah'">
+        <label style="font-size: 20px;">Ramallah </label>
+        <ul class="nav nav-pills">
+            <li *ngFor="let station of Ramallah"><a style="color: black;" href="#"
+                    (click)="select(station);">{{station}}</a></li>
+        </ul>
+    </div>
+    <div *ngIf="Selected_city=='Tulkarem'">
+        <label style="font-size: 20px;">Tulkarem </label>
+        <ul class="nav nav-pills">
+            <li *ngFor="let station of Tulkarem"><a style="color: black;" href="#"
+                    (click)="select(station);">{{station}}</a></li>
+        </ul>
+    </div>
+</div>
+<app-play [selected_station]="selectedStation"></app-play>

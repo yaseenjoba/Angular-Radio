@@ -1,0 +1,44 @@
+<div class="main">
+    <div *ngIf="selected_station=='hebron FM'">
+        <h1 style="font-size: 20px;">hebron FM </h1>
+        <audio width="300" height="32" controls="controls" autoplay="autoplay"
+            src="http://alhaneny.com:8056/;stream.mp3&amp;13202692901&amp;duration=99999&amp;id=scplayer&amp;autostart=true"
+            type="audio/mpeg"></audio>
+    </div>
+    <div *ngIf="selected_station=='Al houria FM'">
+        <h1 style="font-size: 20px;">Al houria FM</h1>
+        <audio controls autoplay
+            src="http://rs.hadara.ps:8000/;stream.mp33&13202692901&duration=99999&id=scplayer&autostart=true"
+            type="audio/mpeg"> </audio>
+    </div>
+    <div *ngIf="selected_station=='Al rabia'">
+        <h1 style="font-size: 20px;">Al rabia</h1>
+        <audio controls autoplay
+            src="http://radio.r4fm.ps:8044/;stream.mp3&13202692901&duration=99999&id=scplayer&autostart=true"
+            type="audio/mpeg"> </audio>
+    </div>
+    <div *ngIf="selected_station=='marah FM'">
+        <h1 style="font-size: 20px;">marah FM</h1>
+
+        <audio controls autoplay src="http://rs.hadara.ps:8056/;stream.mp3" type="audio/mpeg"></audio>
+    </div>
+    <div *ngIf="selected_station=='Ajyal FM'">
+        <h1 style="font-size: 20px;">Ajyal FM</h1>
+
+        <audio controls autoplay source src="http://icecast.mada.ps:8095/ajyalnew" type="audio/mpeg"></audio>
+    </div>
+    <div *ngIf="selected_station=='Alfajer'">
+        <h1 style="font-size: 20px;">Alfajer</h1>
+
+        <audio controls autoplay
+            src="http://rs.hadara.ps:8004/;stream.mp3&13202692901&duration=99999&id=scplayer&autostart=true"
+            type="audio/mpeg"> </audio>
+    </div>
+    <div *ngIf="selected_station=='Kl elnas'">
+        <h1 style="font-size: 20px;">Kl elnas</h1>
+
+        <audio controls autoplay
+            src="http://mmbradio1.serverroom.us:5206/;stream.mp3&amp;13202692901&amp;duration=99999&amp;id=scplayer&amp;autostart=true"
+            type="audio/mpeg"> </audio>
+    </div>
+</div>
