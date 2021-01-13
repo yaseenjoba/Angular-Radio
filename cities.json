@@ -1,0 +1,32 @@
+[
+    {
+        "city":"Hebron",
+        "stations":["hebron FM","marah FM","Al houria FM","Al rabia"]
+    },
+    {
+       "city":"Ramallah",
+       "stations":["Ajyal FM","aroba FM","raya FM","Amoaj FM"]
+   },
+   {
+       "city":"Tulkarem",
+       "stations":["Alfajer","Kl elnas"]
+   },
+   {
+       "city":"Bethlehem",
+       "stations":["Power","Baldna"]
+   },
+   {
+     
+       "city":"Jenin",
+       "stations":["Al balad","Baldna"]
+   },
+   {
+     
+       "city":"Nablus",
+       "stations":["Quran","Baldna"]
+   }
+   
+   
+   
+   
+   ]

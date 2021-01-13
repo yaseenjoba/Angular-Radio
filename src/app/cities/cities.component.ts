@@ -1,3 +1,5 @@
+import { Observable } from 'rxjs';
+import { DataService } from './../data.service';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -6,10 +8,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./cities.component.scss']
 })
 export class CitiesComponent implements OnInit {
-  cities=['Hebron','Ramallah',"Tulkarem"]
-  constructor() { }
+  cities:any
+  constructor(private data:DataService) { }
   selectedCity:any;
   ngOnInit(): void {
+    this.data.getInfo().subscribe(d=>{this.cities=d;});
   }
   select(value:any){
     console.log(value)

@@ -1,12 +1,10 @@
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 <h1 class="title">Palestine Radio Stations</h1>
 <div class="main">
     <div>
-        <label style="font-size: 20px;">Cities</label>
+        <label>Cities</label>
         <ul class="nav nav-pills">
-            <li *ngFor="let city of cities"><a style="color: black;" href="#" (click)="select(city);">{{city}}</a></li>
+            <li *ngFor="let city of cities"><a  href="#" (click)="select(city.city);">{{city.city}}</a></li>
         </ul>
     </div>
     
