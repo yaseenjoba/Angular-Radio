@@ -4,9 +4,9 @@
     <div>
         <label>Cities</label>
         <ul class="nav nav-pills">
-            <li *ngFor="let city of cities"><a  href="#" (click)="select(city.city);">{{city.city}}</a></li>
+            <li *ngFor="let city of cities"><a href="#" (click)="select(city.city);">{{city.city}}</a></li>
         </ul>
     </div>
-    
+
 </div>
 <app-stations [Selected_city]="selectedCity"></app-stations>
