@@ -8,16 +8,19 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./cities.component.scss']
 })
 export class CitiesComponent implements OnInit {
-  cities: any
+  cities: any;
+  selected: any;
   constructor(private data: DataService) { }
-  selectedCity: any;
   ngOnInit(): void {
-    this.data.getInfo().subscribe(d => { this.cities = d; });
+    this.data.getCitiesAndStations().subscribe(d => {
+      this.cities = d;
+      console.log(this.cities);
+    });
+
   }
   select(value: any) {
-    console.log(value)
-    this.selectedCity = value;
-    console.log(this.selectedCity);
+    this.selected = value;
+    console.log(this.selected);
   }
 
 }

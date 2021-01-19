@@ -1,5 +1,6 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
+import { environment } from 'src/environments/environment';
 
 @Injectable({
   providedIn: 'root'
@@ -7,7 +8,7 @@ import { HttpClient } from '@angular/common/http';
 export class DataService {
 
   constructor(private http:HttpClient) { }
-  getInfo(){
-    return this.http.get('https://api.mocki.io/v1/5d8e9629');
+  getCitiesAndStations(){
+    return this.http.get(environment.url);
   }
 }

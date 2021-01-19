@@ -8,7 +8,7 @@ import { Component, Input, OnInit } from '@angular/core';
 export class PlayComponent implements OnInit {
 
   constructor() { }
-  @Input() selected_station:any;
+  @Input() selectedStation:any;
   ngOnInit(): void {
   }
 

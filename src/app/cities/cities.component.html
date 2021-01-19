@@ -1,12 +1,11 @@
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 <h1 class="title">Palestine Radio Stations</h1>
 <div class="main">
     <div>
         <label>Cities</label>
         <ul class="nav nav-pills">
-            <li *ngFor="let city of cities"><a href="#" (click)="select(city.city);">{{city.city}}</a></li>
+            <li *ngFor="let c of cities"><a href="#" (click)="select(c);">{{c.city}}</a></li>
         </ul>
     </div>
 
 </div>
-<app-stations [Selected_city]="selectedCity"></app-stations>
+<app-stations [selectedCity]="selected"></app-stations>

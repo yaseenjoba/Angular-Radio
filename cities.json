@@ -1,32 +1,88 @@
-[
-    {
-        "city":"Hebron",
-        "stations":["hebron FM","marah FM","Al houria FM","Al rabia"]
+[{
+        "city": "Hebron",
+        "stations": [{
+                "name": "hebron FM",
+                "url": "http://alhaneny.com:8056/;stream.mp3&amp;13202692901&amp;duration=99999&amp;id=scplayer&amp;autostart=true"
+            },
+            {
+                "name": "marah FM",
+                "url": "http://rs.hadara.ps:8056/;stream.mp3"
+
+            },
+            {
+                "name": "Al houria FM",
+                "url": "http://rs.hadara.ps:8000/;stream.mp33&13202692901&duration=99999&id=scplayer&autostart=true"
+            },
+            {
+                "name": "Al rabia",
+                "url": "http://rs.hadara.ps:8000/;stream.mp33&13202692901&duration=99999&id=scplayer&autostart=true"
+            }
+        ]
     },
     {
-       "city":"Ramallah",
-       "stations":["Ajyal FM","aroba FM","raya FM","Amoaj FM"]
-   },
-   {
-       "city":"Tulkarem",
-       "stations":["Alfajer","Kl elnas"]
-   },
-   {
-       "city":"Bethlehem",
-       "stations":["Power","Baldna"]
-   },
-   {
-     
-       "city":"Jenin",
-       "stations":["Al balad","Baldna"]
-   },
-   {
-     
-       "city":"Nablus",
-       "stations":["Quran","Baldna"]
-   }
-   
-   
-   
-   
-   ]
+        "city": "Ramallah",
+        "stations": [{
+                "name": "Ajyal FM",
+                "url": "http://icecast.mada.ps:8095/ajyalnew"
+            },
+            {
+                "name": "aroba FM",
+                "url": "http://rs.hadara.ps:8044/listen.pls/;listen.pls?sid=1"
+            },
+            {
+                "name": "raya FM",
+                "url": "http://rs.hadara.ps:8044/listen.pls/;listen.pls?sid=1"
+            },
+            {
+                "name": "Amoaj FM",
+                "url": "http://rs.hadara.ps:8044/listen.pls/;listen.pls?sid=1"
+            }
+        ]
+    },
+    {
+        "city": "Tulkarem",
+        "stations": [{
+                "name": "Alfajer",
+                "url": "http: //rs.hadara.ps:8004/;stream.mp3&13202692901&duration=99999&id=scplayer&autostart=true"
+            },
+            {
+                "name": "Kl elnas",
+                "url": "http://mmbradio1.serverroom.us:5206/;stream.mp3&amp;13202692901&amp;duration=99999&amp;id=scplayer&amp;autostart=true"
+            }
+        ]
+    },
+    {
+        "city": "Bethlehem",
+        "stations": [{
+                "name": "Power",
+                "url": "http://rs.hadara.ps:8044/listen.pls/;listen.pls?sid=1"
+            },
+            {
+                "name": "Baldna",
+                "url": "http://rs.hadara.ps:8044/listen.pls/;listen.pls?sid=1"
+            }
+
+        ]
+    },
+    {
+
+        "city": "Jenin",
+        "stations": [{
+                "name": "Al balad",
+                "url": "http://live.masterweb-ps.com:8006/;mp3"
+            },
+            {
+                "name": "Baldna",
+                "url": "http://live.masterweb-ps.com:8006/;mp3"
+            }
+        ]
+    },
+    {
+
+        "city": "Nablus",
+        "stations": [{
+            "name": "Quran",
+            "url": "http://www.quran-radio.org:8002/;stream.mp3&13202692901&duration=99999&id=scplayer&autostart=true"
+        }]
+    }
+]

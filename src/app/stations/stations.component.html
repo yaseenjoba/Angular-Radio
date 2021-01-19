@@ -1,40 +1,9 @@
 <div class="main">
-    <div *ngIf="Selected_city=='Hebron'">
-        <label>Hebron </label>
-        <ul class="nav nav-pills">
-            <li *ngFor="let station of temp[0].stations"><a style="color: black;" href="#"
-                    (click)="select(station);">{{station}}</a></li>
-        </ul>
-    </div>
-    <div *ngIf="Selected_city=='Ramallah'">
-        <label>Ramallah </label>
-        <ul class="nav nav-pills">
-            <li *ngFor="let station of temp[1].stations"><a href="#" (click)="select(station);">{{station}}</a></li>
-        </ul>
-    </div>
-    <div *ngIf="Selected_city=='Tulkarem'">
-        <label>Tulkarem </label>
-        <ul class="nav nav-pills">
-            <li *ngFor="let station of temp[2].stations"><a href="#" (click)="select(station);">{{station}}</a></li>
-        </ul>
-    </div>
-    <div *ngIf="Selected_city=='Bethlehem'">
-        <label>Bethlehem </label>
-        <ul class="nav nav-pills">
-            <li *ngFor="let station of temp[3].stations"><a href="#" (click)="select(station);">{{station}}</a></li>
-        </ul>
-    </div>
-    <div *ngIf="Selected_city=='Jenin'">
-        <label>Jenin </label>
-        <ul class="nav nav-pills">
-            <li *ngFor="let station of temp[4].stations"><a href="#" (click)="select(station);">{{station}}</a></li>
-        </ul>
-    </div>
-    <div *ngIf="Selected_city=='Nablus'">
-        <label>Nablus </label>
-        <ul class="nav nav-pills">
-            <li *ngFor="let station of temp[5].stations"><a href="#" (click)="select(station);">{{station}}</a></li>
+    <div *ngIf="selectedCity!=undefined">
+        <label>{{selectedCity.city}}</label>
+        <ul class="nav nav-pills ">
+            <li *ngFor="let station of selectedCity.stations "><a style="color: black; " href="# " (click)="select(station); ">{{station.name}}</a></li>
         </ul>
     </div>
 </div>
-<app-play [selected_station]="selectedStation"></app-play>
+<app-play [selectedStation]="selectedStation"></app-play>
