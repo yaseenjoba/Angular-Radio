@@ -1,9 +1,9 @@
 <div class="main">
     <div *ngIf="selectedCity!=undefined">
+        <br><button (click)="pauseAudio() "><p *ngIf="!state " class="fa ">&#xf04b;</p><p *ngIf="state " class="fa ">&#xf04c;</p></button><br>
         <label>{{selectedCity.city}}</label>
         <ul class="nav nav-pills ">
-            <li *ngFor="let station of selectedCity.stations "><a style="color: black; " href="# " (click)="select(station); ">{{station.name}}</a></li>
+            <li *ngFor=" let station of selectedCity.stations "><a style="color: black; " href="# " (click)="select(station); ">{{station.name}}</a></li>
         </ul>
     </div>
 </div>
-<app-play [selectedStation]="selectedStation"></app-play>

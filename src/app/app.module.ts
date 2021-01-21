@@ -6,14 +6,13 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { CitiesComponent } from './cities/cities.component';
 import { StationsComponent } from './stations/stations.component';
-import { PlayComponent } from './play/play.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
     AppComponent,
     CitiesComponent,
     StationsComponent,
-    PlayComponent
   ],
   imports: [
     BrowserModule,

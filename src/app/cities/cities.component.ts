@@ -18,9 +18,12 @@ export class CitiesComponent implements OnInit {
     });
 
   }
-  select(value: any) {
-    this.selected = value;
-    console.log(this.selected);
+  select(event:any) {
+      for(let i=0;i<this.cities.length;i++){
+        if(this.cities[i].city===event.target.value){
+          this.selected=this.cities[i];
+          console.log(this.cities[i]);
+        }
+      }
   }
-
 }

@@ -1,10 +1,12 @@
-li,a:active{
+li,
+a:active {
     background-color: rgb(15, 139, 221);
 }
-.title{
+
+.title {
     background-image: url(../../assets/Radio-Background.jpg);
+    height: 300px;
     width: 100%;
-    height: 500px;
     margin: 0px;
     color: white;
     text-align: center;
@@ -12,14 +14,57 @@ li,a:active{
     display: flex;
     flex-direction: column;
 }
-.main{
+
+.main {
     text-align: center;
     justify-content: center;
     display: flex;
 }
-a{
-    color:black;
+
+a {
+    color: black;
 }
-label{
+
+label {
     font-size: 20px;
+}
+
+
+/* Extra small devices (phones, 600px and down) */
+
+@media only screen and (max-width: 600px) {
+    .main-contant {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+
+@media only screen and (min-width: 600px) {}
+
+
+/* Medium devices (landscape tablets, 768px and up) */
+
+@media only screen and (min-width: 768px) {}
+
+
+/* Large devices (laptops/desktops, 992px and up) */
+
+@media only screen and (min-width: 992px) {
+    .main-contant {
+        width: 20%;
+        height: 20%;
+    }
+}
+
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+
+@media only screen and (min-width: 1200px) {
+    .main-contant {
+        width: 20%;
+        height: 20%;
+    }
 }

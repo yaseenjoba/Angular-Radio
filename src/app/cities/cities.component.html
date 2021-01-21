@@ -1,11 +1,11 @@
-<h1 class="title">Palestine Radio Stations</h1>
-<div class="main">
-    <div>
-        <label>Cities</label>
-        <ul class="nav nav-pills">
-            <li *ngFor="let c of cities"><a href="#" (click)="select(c);">{{c.city}}</a></li>
-        </ul>
+<div class="main-contant container">
+    <h1 class="title">Palestine Radio Stations</h1>
+    <div class="main">
+        <label>Cities :</label>
+        <select (change)="select($event)" class=" custom-select ">
+            <option selected>Select cities</option>
+            <option *ngFor="let c of cities ">{{c.city}}</option>
+        </select>
     </div>
-
+    <app-stations [selectedCity]="selected"></app-stations>
 </div>
-<app-stations [selectedCity]="selected"></app-stations>
